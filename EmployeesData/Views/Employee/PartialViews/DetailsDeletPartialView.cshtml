@@ -1,0 +1,72 @@
+﻿@model Employee
+<div asp-validation-summary="All"> </div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" readonly />
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="NationalId"></label>
+    <input asp-for="NationalId" class="form-control" readonly />
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="BirthBade"></label>
+    <input asp-for="BirthBade" name="BirthBade" readonly class="form-control" id="BD" />
+</div>
+
+
+
+
+<div class=" form-group">
+    <label class="col-form-label" asp-for="Account"> </label>
+
+    <select class="form-control" asp-for="Account" readonly>
+        <option value=@null> --Select Account--</option>
+        <option value="TE Data">TE Data </option>
+        <option value="Telecom Egypt"> Telecom Egypt</option>
+    </select>
+</div>
+
+<div class=" form-group">
+    <label class="col-form-label" asp-for="LineOfBusiness" readonly> </label>
+
+    <select class="form-control" asp-for="LineOfBusiness">
+        <option value=@null> --Select Line Of Business--</option>
+        <option value="Basic">Basic </option>
+        <option value="Technical Support"> Technical Support</option>
+        <option value="Inbound"> Inbound</option>
+        <option value="Inbound"> Inbound</option>
+    </select>
+</div>
+
+
+<div class=" form-group">
+    <label class="col-form-label" asp-for="Language"> </label>
+
+    <select class="form-control" asp-for="Language" readonly>
+        <option value=@null> --Select Language--</option>
+        <option value="English">English </option>
+        <option value="French"> French</option>
+        <option value="German"> German</option>
+        <option value="Italian"> Italian</option>
+        <option value="Russian"> Russian</option>
+
+    </select>
+</div>
+
+<div class=" form-group">
+    <label class="col-form-label" asp-for="Languagelevel"> </label>
+    <select class="form-control " asp-for="Languagelevel" readonly>
+        <option value=@null> --Select Languagelevel--</option>
+        <option value="b1">B1 </option>
+        <option value="b2"> B2</option>
+        <option value="a1"> A1</option>
+        <option value="a2"> A2</option>
+        <option value="c1"> C1</option>
+
+    </select>
+
+
+</div>
